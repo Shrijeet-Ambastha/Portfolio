@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shrijeet Portfolio</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:black;
+    color:white;
+}
+
+/* container */
+.container{
+    width:80%;
+    margin:auto;
+    margin-top:40px;
+}
+
+/* header */
+.header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.header h1{
+    font-size:40px;
+}
+
+/* section cards */
+.section{
+    background:#1c1c1c;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(255,255,255,0.1);
+}
+
+/* section title */
+.section h2{
+    color:#00ffff;
+    border-bottom:2px solid #00ffff;
+    padding-bottom:5px;
+}
+
+/* list styling */
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    padding:8px;
+    margin:5px 0;
+    background:#333;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+li:hover{
+    background:#00ffff;
+    color:black;
+}
+
+/* project cards */
+.project{
+    background:#333;
+    padding:12px;
+    margin:10px 0;
+    border-radius:6px;
+    transition:0.3s;
+    overflow:hidden;
+}
+
+.title{
+    font-weight:bold;
+}
+
+.description{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.4s ease;
+    margin-top:5px;
+    color:#ddd;
+}
+
+.project:hover .description{
+    max-height:120px;
+}
+
+.project:hover{
+    background:#444;
+}
+
+/* experience cards */
+.experience{
+    background:#333;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+}
+
+.experience:hover{
+    background:#444;
+}
+
+/* certification cards */
+.cert{
+    background:#333;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+}
+
+.cert:hover{
+    background:#444;
+}
+
+/* contact */
+.contact{
+    text-align:center;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Shrijeet</h1>
+<p>B.Tech CSE Student | Software Developer</p>
+</div>
+
+<div class="section">
+<h2>Skills</h2>
+<ul>
+<li>Java</li>
+<li>Python</li>
+<li>MongoDB</li>
+<li>HTML & CSS</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Projects</h2>
+
+<div class="project">
+<div class="title">AI Search System</div>
+<div class="description">
+A system that converts text into embeddings and stores them in a vector database for semantic search.
+</div>
+</div>
+
+<div class="project">
+<div class="title">Gyro Controlled Spy Car</div>
+<div class="description">
+Arduino based spy car controlled using gyroscope with camera module and wireless communication.
+</div>
+</div>
+
+<div class="project">
+<div class="title">Visitor E-Gate Pass System (TRF.co.in TATA)</div>
+<div class="description">
+A digital system for managing visitor entries and generating automated gate passes.
+</div>
+</div>
+
+<div class="project">
+<div class="title">Spam Detector for Email</div>
+<div class="description">
+Machine learning model that classifies emails as spam using NLP techniques.
+</div>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Experience</h2>
+
+<div class="experience">
+<b>Software Intern – TRF (TATA)</b><br>
+Worked on the Visitor E-Gate Pass System to digitize visitor management and automate entry processes.
+</div>
+
+<div class="experience">
+<b>Academic Projects – B.Tech CSE</b><br>
+Developed multiple projects including AI Search System, Spam Detector, and Arduino based Spy Car.
+</div>
+
+</div>
+
+<div class="section">
+<h2>Certifications</h2>
+
+<div class="cert">
+AWS Cloud computing
+</div>
+
+<div class="cert">
+Wadhwani Certified Enterpreneurship 
+</div>
+
+<div class="cert">
+Introduction to Machine Learning(30% Completed)
+</div>
+<div class="cert">
+TRF TATA Internship Certification
+</div>
+
+<div class="section contact">
+<h2>Contact</h2>
+<p>Email: ambasthashrijeet@gmail.com</p>
+<p>Phno : 7070549717</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
