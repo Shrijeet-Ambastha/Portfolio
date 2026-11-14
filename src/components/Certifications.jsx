@@ -239,7 +239,7 @@ const Certifications = () => {
         'Completed comprehensive training in data cleaning, exploratory dataset analysis, statistical modeling, and extracting actionable insights from structured datasets.',
       skills: ['Data Science', 'Dataset Analysis', 'Data Cleaning', 'Analytics'],
       verifyUrl: 'https://drive.google.com/file/d/1UOG1Bk598DQDrr2ZK5n0fkQda3HvdGo9/view?usp=sharing',
-      file: '/certs/machine-learning.pdf', // Replace with your exact PDF filename in public/certs/
+      file: 'certs/machine-learning.pdf', // Replace with your exact PDF filename in public/certs/
     },
     {
       title: 'System Design & Architecture',
@@ -250,7 +250,7 @@ const Certifications = () => {
         'Acquired expertise in designing scalable, high-performance systems, including microservices architecture, database optimization, and cloud deployment strategies.',
       skills: ['System Design', 'Architecture', 'Microservices', 'Cloud Deployment'],
       verifyUrl: 'https://drive.google.com/file/d/1fSSjO2q_7_qSWFuED-RKldogIwS1wfFq/view?usp=sharing',
-      file: '/certs/system-design.pdf', // Replace with your exact PDF filename in public/certs/
+      file: 'certs/system-design.pdf', // Replace with your exact PDF filename in public/certs/
     },
     {
       title: 'Internship Certificate',
@@ -261,7 +261,7 @@ const Certifications = () => {
         'Recognized for successful completion of internship responsibilities and contributions to the organization.',
       skills: ['MERN', 'Microservices', 'Database Optimization', 'Cloud Deployment'],
       verifyUrl: 'https://drive.google.com/file/d/1vUWxEkImPJKHO8CMWoZd55QdAAc4bJzL/view?usp=drive_link',
-      file: '/certs/tata-internship.pdf', // Replace with your exact PDF filename in public/certs/
+      file: 'certs/tata-internship.pdf', // Replace with your exact PDF filename in public/certs/
     },
     {
       title: 'Amazon Web Services (AWS) Cloud Practitioner',
@@ -272,7 +272,7 @@ const Certifications = () => {
         'Demonstrated foundational knowledge of AWS cloud concepts, services, and best practices for deploying and managing applications in the cloud.',
       skills: ['AWS', 'Cloud Computing', 'Cloud Architecture', 'Cloud Deployment'],
       verifyUrl: 'https://drive.google.com/file/d/1wY_ppbEgKDqQX99J-4V_2CXtgTTqkhd4/view?usp=drive_link',
-      file: '/certs/aws.pdf', // Replace with your exact PDF filename in public/certs/
+      file: 'certs/aws.pdf', // Replace with your exact PDF filename in public/certs/
     },
     {
       title: 'Wadhwani Entrepreneurship Development Program',
@@ -283,7 +283,7 @@ const Certifications = () => {
         'Completed structured entrepreneurship and venture development training focused on opportunity discovery, business modeling, and go-to-market execution.',
       skills: ['Entrepreneurship', 'Business Modeling', 'Product Strategy', 'Leadership'],
       verifyUrl: 'https://drive.google.com/file/d/13Ze6bBu-4ML5ID1S8_lyApj210aif7l_/view?usp=sharing',
-      file: '/certs/wadhwani.pdf', // Replace with your exact PDF filename in public/certs/
+      file: 'certs/wadhwani.pdf', // Replace with your exact PDF filename in public/certs/
     },
   ];
 
@@ -304,6 +304,7 @@ const Certifications = () => {
   }, [currentIndex, isPaused]);
 
   const currentCert = certifications[currentIndex];
+  const fileUrl = `${import.meta.env.BASE_URL}${currentCert.file}`;
 
   return (
     <section
@@ -351,13 +352,13 @@ const Certifications = () => {
             <div className="md:col-span-2 bg-red-50/60 border-b md:border-b-0 md:border-r border-slate-200 p-4 flex flex-col justify-between">
               <div className="relative w-full h-64 md:h-full min-h-[250px] rounded-xl overflow-hidden bg-white border border-slate-200 flex items-center justify-center group">
                 <iframe
-                  src={`${currentCert.file}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+                  src={`${fileUrl}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
                   title={currentCert.title}
                   className="w-full h-full border-0 pointer-events-none"
                 />
 
                 <a
-                  href={currentCert.file}
+                  href={fileUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="absolute inset-0 bg-slate-900/0 hover:bg-slate-900/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-all"

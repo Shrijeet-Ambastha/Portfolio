@@ -55,8 +55,8 @@ const Hero = () => {
             <ArrowRight className="w-4 h-4" />
           </a>
 
-          <a
-            href="/resume.pdf"
+         <a
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             download="Shrijeet_Ambastha_Resume.pdf"
             className="px-6 py-3.5 rounded-xl bg-white hover:bg-red-50 text-slate-800 border border-slate-300 hover:border-red-300 font-medium inline-flex items-center gap-2 transition-colors"
           >
