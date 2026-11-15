@@ -13,18 +13,20 @@ function App() {
   return (
     <div>
       <Navbar />
-      <About />
-      <Contact />
-     < Skills />
-      <Projects />
-      <Certifications />
-
-      <Experience />
-      
-      <Hero />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Certifications />
+        <Contact />
+      </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
