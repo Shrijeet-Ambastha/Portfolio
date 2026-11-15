@@ -35,18 +35,24 @@ const Contact = () => {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: '49320e99-98e6-4f1c-83e0-1e8af432588b',
+          subject: `Portfolio Contact from ${formData.name}`,
+          from_name: formData.name,
           ...formData,
         }),
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (data.success) {
         setStatus('sent');
         setFormData({ name: '', email: '', message: '' });
         setTimeout(() => setStatus('idle'), 4000);
       } else {
+        console.error('Web3Forms error:', data);
         setStatus('error');
       }
-    } catch {
+    } catch (err) {
+      console.error('Submission error:', err);
       setStatus('error');
     }
   };
