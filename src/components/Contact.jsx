@@ -34,7 +34,7 @@ const Contact = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY',
+          access_key: '49320e99-98e6-4f1c-83e0-1e8af432588b',
           ...formData,
         }),
       });
@@ -113,7 +113,7 @@ const Contact = () => {
 
               <div className="flex items-center gap-2 text-sm text-slate-500 pt-2 pl-1">
                 <MapPin className="w-4 h-4 text-red-600" />
-                <span>Jamshedpur / Amaravati, India</span>
+                <span>Jamshedpur, Jharkhand, India</span>
               </div>
             </div>
           </div>
