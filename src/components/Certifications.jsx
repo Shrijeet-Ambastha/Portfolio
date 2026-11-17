@@ -62,6 +62,17 @@ const Certifications = () => {
       verifyUrl: 'https://drive.google.com/file/d/13Ze6bBu-4ML5ID1S8_lyApj210aif7l_/view?usp=sharing',
       file: 'certs/wadhwani.pdf',
     },
+    {
+      title: 'Large Language Model (LLM) ',
+      issuer: 'Tutedude Academy',
+      date: '16th November 2026',
+      credentialId: 'TD-SHRI-LLM-1522',
+      description:
+        'Completed comprehensive training in large language models, including natural language processing, model fine-tuning, and deployment of AI-driven applications.',
+      skills: ['Hugging Face', 'Natural Language Processing', 'Model Fine-Tuning', 'AI Deployment'],
+      verifyUrl: 'https://drive.google.com/file/d/1xxcWsViZ3Le5gPWuT2vB7jpQvSNER8cU/view?usp=sharing',
+      file: 'certs/llm.pdf',
+    }
   ];
 
   const prevSlide = () => {
